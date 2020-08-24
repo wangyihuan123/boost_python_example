@@ -18,15 +18,11 @@ find_package(Boost COMPONENTS python REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 include_directories(/usr/local/lib/python2.7/dist-packages/numpy/core/include/)
 
-# FILE(GLOB log_detect_sources log_detect/log_detect.*)
-
-#include_directories(${CUDA_INCLUDE_DIRS})
-
 
 FILE(GLOB PYTHON_SOURCE_LIST
         conversion.cpp
         conversion.h
-        test.cpp)
+        pyTest.cpp)
 
 
 set(PythonMODULE pyTest)
